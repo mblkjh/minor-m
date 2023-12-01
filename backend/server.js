@@ -44,7 +44,7 @@ app.use('/job', (req, res) => {
   // You need to handle the request and send a response here
   res.send('JobDetails route');
 });
-const storage = multer.memoryStorage();
+// const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 app.post('/apply', upload.single('file'), async (req, res) => {
   try {
