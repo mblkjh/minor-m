@@ -8,7 +8,6 @@ const req = require("express");
 const sendEmail = require("../utils/sendEmail");
 const crypto = require("crypto");
 
-// Now you can use sendEmail function here
 
 dotenv.config();
 

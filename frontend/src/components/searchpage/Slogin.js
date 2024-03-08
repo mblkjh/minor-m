@@ -91,13 +91,13 @@ const Slogin = () => {
                 <form action="#">
                   <div className="input-boxes">
                     <div className="input-boxi">
-                      <input value={email} onChange={(e)=> setEmail(e.target.value)} type="email" name="email" required />
+                      <input className='entry' value={email} onChange={(e)=> setEmail(e.target.value)} type="email" name="email" required />
                       <label for=""> Email </label>
                       <i className="zmdi zmdi-email material-icons-name "></i>
                     </div>
 
                     <div className="input-boxi">
-                      <input value={password} onChange={(e)=> setPassword(e.target.value)} type="password" name="password" required />
+                      <input className='entry' value={password} onChange={(e)=> setPassword(e.target.value)} type="password" name="password" required />
                       <label for=""> Password </label>
                       <i className="zmdi zmdi-lock material-icons-name "></i>
                     </div>
@@ -128,8 +128,8 @@ const Slogin = () => {
                 <form action="#">
                   <div className="input-boxes">
                     <div className="input-boxi">
-                      <i className="zmdi zmdi-account material-icons-name "></i>
-                      <input
+                      <i className="zmdi zmdi-account material-icons-name " style={{ marginLeft: '-1rem' }}></i>
+                      <input className='entry' style={{ marginLeft: '-1rem' }}
                         type="text"
                         name="name"
                         id="name"
@@ -142,8 +142,8 @@ const Slogin = () => {
                     </div>
 
                     <div className="input-boxi">
-                      <i className="zmdi zmdi-email material-icons-name "></i>
-                      <input
+                      <i className="zmdi zmdi-email material-icons-name style={{ marginLeft: '-20rem' }}"></i>
+                      <input className='entry' style={{ marginLeft: '-1rem' }}
                         type="email"
                         name="email"
                         id="email"
@@ -156,8 +156,8 @@ const Slogin = () => {
                     </div>
 
                     <div className="input-boxi">
-                      <i className="zmdi zmdi-phone-in-talk material-icons-name "></i>
-                      <input
+                      <i className="zmdi zmdi-phone-in-talk material-icons-name style={{ marginLeft: '-20rem' }}"></i>
+                      <input className='entry' style={{ marginLeft: '-1rem' }}
                         type="text"
                         name="phone"
                         id="phone"
@@ -170,8 +170,8 @@ const Slogin = () => {
                     </div>
 
                     <div className="input-boxi">
-                      <i className="zmdi zmdi-slideshow material-icons-name "></i>
-                      <input
+                      <i className="zmdi zmdi-slideshow material-icons-name style={{ marginLeft: '-20rem' }}"></i>
+                      <input className='entry' style={{ marginLeft: '-1rem' }}
                         type="text"
                         name="work"
                         id="work"
@@ -184,8 +184,8 @@ const Slogin = () => {
                     </div>
 
                     <div className="input-boxi">
-                      <i className="zmdi zmdi-lock material-icons-name "></i>
-                      <input
+                      <i className="zmdi zmdi-lock material-icons-name style={{ marginLeft: '-20rem' }}"></i>
+                      <input className='entry' style={{ marginLeft: '-1rem' }}
                         type="password"
                         name="password"
                         id="password"
@@ -198,8 +198,8 @@ const Slogin = () => {
                     </div>
 
                     <div className="input-boxi">
-                      <i className="zmdi zmdi-lock material-icons-name "></i>
-                      <input
+                      <i className="zmdi zmdi-lock material-icons-name style={{ marginLeft: '-20rem' }}"></i>
+                      <input className='entry' style={{ marginLeft: '-1rem' }}
                         type="text"
                         name="cpassword"
                         id="cpassword"

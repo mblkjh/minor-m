@@ -252,7 +252,7 @@ const Wrapper = styled.section`
   flex-direction: column;
   gap: 3rem;
   width:70%;
-  height:110vh;
+  height:130rem;
   padding:20px 30px;
   box-shadow: 0 0 25px rgb(192, 191, 191);
   border:none;
@@ -267,7 +267,7 @@ const Wrapper = styled.section`
   .filter-search {
     form {
       margin-bottom: 0.5px; 
-      height:3rem;/* Adjust margin as needed */
+      height:auto;/* Adjust margin as needed */
     }
   
     .search-input {

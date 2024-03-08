@@ -45,28 +45,28 @@ app.use('/job', (req, res) => {
   res.send('JobDetails route');
 });
 // const storage = multer.memoryStorage();
-const upload = multer({ storage: storage });
-app.post('/apply', upload.single('file'), async (req, res) => {
-  try {
-    const { firstName, lastName, email, contactNo } = req.body;
+// const upload = multer({ storage: storage });
+// app.post('/apply', upload.single('file'), async (req, res) => {
+//   try {
+//     const { firstName, lastName, email, contactNo } = req.body;
 
-    // Save the file to the database using the imported schema
-    const newSApply = new SApply({
-      firstName,
-      lastName,
-      email,
-      contactNo,
-      resume: req.file.buffer.toString('base64'),
-    });
+//     // Save the file to the database using the imported schema
+//     const newSApply = new SApply({
+//       firstName,
+//       lastName,
+//       email,
+//       contactNo,
+//       resume: req.file.buffer.toString('base64'),
+//     });
 
-    await newSApply.save();
+//     await newSApply.save();
 
-    res.json({ success: true, message: 'Application submitted successfully' });
-  } catch (error) {
-    console.error('Error:', error);
-    res.status(500).json({ success: false, message: 'Internal Server Error' });
-  }
-});
+//     res.json({ success: true, message: 'Application submitted successfully' });
+//   } catch (error) {
+//     console.error('Error:', error);
+//     res.status(500).json({ success: false, message: 'Internal Server Error' });
+//   }
+// });
 
 // app.use('/job-details', jobDetailsRoute);
 // app.use('/job/:id', async (req, res) => {
@@ -84,8 +84,8 @@ app.post('/apply', upload.single('file'), async (req, res) => {
 //   }
 // });
 
-const chatRouter = require('./routes/chatRoute')
-app.use("/api/v1",chatRouter)
+// const chatRouter = require('./routes/chatRoute')
+// app.use("/api/v1",chatRouter)
 const PORT = process.env.PORT;
 
 app.get("/signin", (req, res) => {
